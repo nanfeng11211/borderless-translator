@@ -12,11 +12,20 @@
 <body>
   <div class="noise"></div>
   <main>
-    <nav><a class="brand" href="#"><i></i>BORDERLESS</a><span>跨境商品本地化工作台 <b>01</b></span></nav>
+    <nav><a class="brand" href="#"><i></i>BORDERLESS</a><span>跨境商品本地化工作台 <b>01</b></span><button class="scan-link" id="scanOpen">扫码识品 <b>↗</b></button></nav>
     <section class="hero">
       <p class="eyebrow">SELL EVERYWHERE / SPEAK NATIVELY</p>
       <h1>不只翻译文字，<br><em>让商品卖向世界。</em></h1>
       <p class="intro">为 Amazon、Shopify、TikTok Shop 和独立站准备的商品文案翻译。保留卖点，适配当地表达。</p>
+    </section>
+    <section class="trend-strip" aria-label="爆款选品模板">
+      <div class="trend-title"><span>HOT PICKS / 2026</span><h2>爆款选品<br>一键起稿</h2><p>热门类目模板已整理好，点选后直接开始本地化。</p></div>
+      <div class="trend-grid">
+        <button class="trend-card lime" data-text="便携挂脖风扇，3档风速，静音设计，USB-C 快充，适合通勤、户外与旅行"><span>夏季热卖</span><b>挂脖风扇</b><small>户外 · 通勤</small></button>
+        <button class="trend-card peach" data-text="宠物便携饮水瓶，一键出水回流设计，防漏锁扣，适合遛狗、徒步和旅行"><span>宠物用品</span><b>便携饮水瓶</b><small>遛狗 · 出行</small></button>
+        <button class="trend-card blue" data-text="无热卷发套装，柔软缎面材质，睡眠不压发，打造自然大波浪卷"><span>美妆个护</span><b>无热卷发套装</b><small>睡眠 · 造型</small></button>
+        <button class="trend-card sand" data-text="可调节阻力训练带套装，5种阻力等级，附门扣和收纳袋，适合居家全身训练"><span>居家健身</span><b>阻力带套装</b><small>轻量 · 易发货</small></button>
+      </div>
     </section>
     <section class="workspace">
       <aside class="settings">
@@ -42,6 +51,7 @@
     <footer><span>© 2026 BORDERLESS STUDIO</span><span>为全球卖家而作</span></footer>
   </main>
   <div class="toast" id="toast">已复制到剪贴板</div>
+  <div class="scan-modal" id="scanModal" hidden><button class="scan-backdrop" id="scanClose" aria-label="关闭扫码窗口"></button><section class="scan-card"><button class="scan-x" id="scanCloseIcon" aria-label="关闭">×</button><div class="scan-copy"><span>PRODUCT INTELLIGENCE</span><h2>扫码识品<br>即将上线</h2><p>用商品条码或商品图，快速创建跨境翻译与本地化任务。</p><small>当前版本可先使用「爆款选品」模板起稿。</small></div><div class="scan-visual"><div class="scan-qr"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>SCAN TO DISCOVER</b></div></section></div>
   <script src="./app.js"></script>
 </body>
 </html>
